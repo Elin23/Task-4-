@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Start Global*/
+:root {
+    --main-color: #3fbbc0;
+    --white-50: #ffffffc0;
+    --section-color: #f7fdfd;
+}
+
+.sub-nav,
+.btn {
+    background-color: var(--main-color);
+}
+
+.active {
+    color: var(--main-color) !important;
+}
+
+.title h3::after {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 0 .25rem #41bec394 !important;
+}
+
+.make-appointment,
+.questions,
+footer {
+    background-color: var(--section-color);
+}
+
+/*End Global*/
+
+/*Start Header*/
+.header-btn:hover,
+.header-btn:active {
+    color: var(--main-color) !important;
+    border: 1px solid var(--main-color);
+}
+
+.nav-item:hover a {
+    color: var(--main-color);
+}
+
+/*End Header*/
+
+/*Start carousel*/
+.carousel-indicators button {
+    background-color: var(--white-50) !important;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--main-color) !important;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    bottom: 40%;
+    background-color: var(--white-50);
+    border-top: 4px solid var(--main-color);
+}
+
+.carousel-caption .btn:hover {
+    background-color: var(--white-50);
+    color: var(--main-color) !important;
+    border: 1px solid var(--main-color);
+}
+
+.carousel-caption p {
+    font-size: 12px;
+}
+
+/*End carousel*/
+
+/*Start Services*/
+.card-icon {
+    width: 50px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-icon i {
+    color: var(--main-color);
+}
+
+.card-text {
+    font-size: 13px;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+/*End Services*/
+
+/*Start make-appointment*/
+.modal-footer .btn:hover {
+    background-color: var(--main-color);
+}
+
+/*End make-appointment*/
+
+/*Start Department*/
+.department nav ul li a.active {
+    border-right: 1px solid var(--main-color);
+}
+
+.tab-content img {
+    width: 35%;
+}
+
+.tab-content p {
+    font-size: 13px;
+}
+
+.department .nav {
+    border-right: 1px solid #959292;
+}
+
+.department .nav a.active {
+    width: 100%;
+    border-right: 2px solid var(--main-color);
+}
+
+/*End Department*/
+
+/*Start Contact*/
+.contact .icon {
+    width: 80px;
+    height: 80px;
+    border: 3px dotted var(--main-color);
+}
+
+.contact .icon i {
+    color: var(--main-color);
+}
+
+.contact .shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact .content a {
+    color: var(--main-color) !important;
+}
+
+.contact .btn:hover {
+    background-color: var(--main-color);
+}
+
+/*End Contact*/
+/*Start footer*/
+.footer li:hover a {
+    color: var(--main-color) !important;
+}
+
+.footer ul.social a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #726f6f;
+}
+
+.footer ul.social i {
+    color: #726f6f;
+    transition: .3s ease;
+}
+
+.footer ul.social li:hover a {
+    border-color: var(--main-color);
+}
+
+.footer ul.social li:hover i {
+    color: var(--main-color);
+}
+
+.footer .copyright {
+    border-top: 2px solid #726f6f;
+}
+
+.footer .copyright span.colored {
+    color: var(--main-color);
+}
+
+/*End footer*/
+
+/*Media Query*/
+@media (max-width: 396px) {
+    .navbar-brand{
+        width: 70%;
+    }
+}
